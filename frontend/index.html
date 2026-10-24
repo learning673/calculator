@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full-Stack Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <h1>Calculator</h1>
+
+        <label for="a">First number</label>
+        <input id="a" type="number" step="any" required>
+
+        <label for="operation">Operation</label>
+        <select id="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (−)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+        </select>
+
+        <label for="b">Second number</label>
+        <input id="b" type="number" step="any" required>
+
+        <button id="calculate">Calculate</button>
+        <p id="result" aria-live="polite">Your result appears here.</p>
+    </main>
+</body>
+</html>
